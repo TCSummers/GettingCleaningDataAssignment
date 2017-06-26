@@ -25,3 +25,6 @@ The following modifications to the column names:
 4) Frequency variables were marked as such, previously starting with "f"
 5) "Acc" was unabbreiated to "Acceleration"
 6) All dashes ("-") were removed
+
+##Output
+A file named "TylersTidyData.txt" will be written to the working directory.
