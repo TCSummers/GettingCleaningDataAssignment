@@ -77,6 +77,9 @@ z<-data.frame(subject="Averages",t(colMeans(tidydata[1:2099,2:87])),activity.typ
 z<-data.frame(rowMeans(tidydata[1:10300,2:87]))##create subject averages
   names(z)<-"SubjectAverages"
   tidydata<-cbind(tidydata,z);
-  rm(z)##clean up extra steps
+  rm(z);##clean up extra steps
+
+##output
+write.table(tidydata,file="TylersTidyData.txt",row.name=FALSE)
 
 ##sure hope that works!
